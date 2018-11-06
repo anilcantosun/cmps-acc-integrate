@@ -70,7 +70,7 @@ while (1){
                 
             //conditional, apabila bacaan sumbu y diatas 10 m/s^2 atau bacaan dibawah 7 m/s^2
             //              maka menandakan robot sedang mulai berjalan dan mulai perhitungan koordinat
-            if ((b1 > 1000) || (b1 < 700)){
+            if (((b1 > 1000) || (b1 < 700))&&((a1 < 50000)||(a1>80000))){
                  v1 = ((a1+ax)/4);         //metode integral trapesium dengan t = 0,5 s
                  ax = a1;
                  v2 = ((b1+ay)/4);
